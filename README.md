@@ -32,7 +32,7 @@ Assurez-vous que les constantes `APP_TITLE`, `APP_SUBTITLE`, et `SECRET_CODE` so
 - [index.php](index.php) : Le point d'entrée principal de l'application.
 - [conf.php](app/conf.php) : Fichier de configuration contenant les constantes de l'application.
 - [functions.php](app/functions.php) : Fichier contenant les fonctions utilitaires pour l'application.
-- [vendors](vendors) : Répertoire contenant les dépendances installées via Composer.
+- [vendors](vendors) : Répertoire contenant les dépendances.
 
 ## Sécurité
 
