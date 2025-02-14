@@ -1,6 +1,6 @@
 # Access Page
 
-Ce projet est une page d'accès sécurisée pour les services disponibles. Il utilise PHP pour gérer les sessions et les requêtes POST.
+Ce projet est une page d'accès sécurisée pour héberger du contenu privé. Il utilise PHP pour gérer les sessions et les requêtes POST.
 
 ## Prérequis
 
