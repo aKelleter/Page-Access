@@ -30,9 +30,9 @@ Assurez-vous que les constantes `APP_TITLE`, `APP_SUBTITLE`, et `SECRET_CODE` so
 ## Structure du projet
 
 - [index.php](index.php) : Le point d'entrée principal de l'application.
-- [conf.php](http://_vscodecontentref_/2) : Fichier de configuration contenant les constantes de l'application.
-- [functions.php](http://_vscodecontentref_/3) : Fichier contenant les fonctions utilitaires pour l'application.
-- [vendors](http://_vscodecontentref_/4) : Répertoire contenant les dépendances installées via Composer.
+- [conf.php](app/conf.php) : Fichier de configuration contenant les constantes de l'application.
+- [functions.php](app/functions.php) : Fichier contenant les fonctions utilitaires pour l'application.
+- [vendors](vendors) : Répertoire contenant les dépendances installées via Composer.
 
 ## Sécurité
 
