@@ -18,8 +18,9 @@ if (!isset($_SESSION['access']) || $_SESSION['access'] !== true) {
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="mesa.png">   
+    <link rel="shortcut icon" href="assets/img/mesa.png">   
     <link href="vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
     <title><?= APP_TITLE ?></title>    
   </head>
   <body>
@@ -34,9 +35,10 @@ if (!isset($_SESSION['access']) || $_SESSION['access'] !== true) {
                 <h3 class="mb-4"><u>Available services</u></h3>
                 <a class="btn btn-info" href="" target="_blank">First Service</a>                
                 <hr>
+                <footer class="mt-1 text-center small">| <?= APP_TITLE ?> | <?= APP_VERSION ?> | <a href="<?= URL_GITHUB_PRJ ?>" target="_blank"><img class="pa_github" src="<?= ICON_GITHUB ?>" alt="Icon Github" title="Github repository"/></a></footer>
             </div>
         </div>
     </div>
-    <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>

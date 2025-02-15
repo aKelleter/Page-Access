@@ -11,20 +11,25 @@
 function displayPageForm($msg = null) {
     $app_title = APP_TITLE;
     $app_subtitle = APP_SUBTITLE;
+    $app_version = APP_VERSION;
+    $icon_github = ICON_GITHUB;
+    $url_github_prj = URL_GITHUB_PRJ;
     echo <<<END
     <!DOCTYPE html>
     <html lang="en">
     <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="shortcut icon" href="mesa.png">   
-      <title>$app_title</title>
+      <link rel="shortcut icon" href="assets/img/mesa.png">         
       <link href="vendors/bootstrap/css/bootstrap.min.css"  rel="stylesheet">
+      <link href="assets/css/styles.css" rel="stylesheet">
+      <title>$app_title</title>
     </head>
     <body>    
        <div class="container">
           <div class="row">
-              <div class="col-md-12">
+              <div class="col-md-2"></div>
+              <div class="col-md-8">
                   <div class="mt-5 mb-5 border rounded p-4 text-center">
                     <h1 class="text-center"><span class="text-info">$app_title</span></h1> 
                     <p class="text-center"> | $app_subtitle |</p>
@@ -34,13 +39,15 @@ function displayPageForm($msg = null) {
                             <label class="form-label" for="code">Please enter the identification code :</label>
                             <input class="form-control" type="password" id="code" name="code" required>
                         </div>
-                        <div class="mb-3 row">
+                        <div class="mb-1 row">
                             <input type="hidden" id="form" name="form" value="identifcation">
                             <button type="submit" class="btn btn-primary mb-3">Sign in</button>
                         </div>        
                     </form>
                   </div>
+                  <footer class="text-center small">| $app_title | $app_version | <a href="$url_github_prj" target="_blank"><img class="pa_github" src="$icon_github" alt="Icon Github" title="Github repository"/></a></footer>
                  </div>
+                 <div class="col-md-2"></div>
                 </div>
                </div>
                <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
