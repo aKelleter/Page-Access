@@ -40,7 +40,7 @@ function displayPageForm($msg = null) {
                             <input class="form-control" type="password" id="code" name="code" required>
                         </div>
                         <div class="mb-1 row">
-                            <input type="hidden" id="form" name="form" value="identifcation">
+                            <input type="hidden" id="_form" name="_form" value="identifcation">
                             <button type="submit" class="btn btn-primary mb-3">Sign in</button>
                         </div>        
                     </form>
@@ -135,7 +135,7 @@ function handlePostRequest() {
     $msg = '';
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        $form = $_POST['form'] ?? '';
+        $form = $_POST['_form'] ?? '';
 
         if ($form == 'identifcation') {
             $code = $_POST['code'] ?? '';

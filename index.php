@@ -28,8 +28,14 @@ if (!isset($_SESSION['access']) || $_SESSION['access'] !== true) {
         <div class="row">
             <div class="col-md-12">
                 <div class="mt-5 mb-5 border rounded p-4 text-center">
-                    <h1 class="text-center"><span class="text-info"><?= APP_TITLE ?></h1> 
-                    <p class="text-center"> | <?= APP_SUBTITLE ?> | <form action="" method="post"><input type="hidden"  id="form" name="form" value="signout"><input class="btn btn-danger" type="submit" value="sign out" /><form></p>                    
+                    <h1 class="text-center"><span class="text-info"><?= APP_TITLE ?></span></h1> 
+                    <div class="text-center"> 
+                      <p>| <?= APP_SUBTITLE ?> |</p>
+                      <form action="" method="post">
+                        <input type="hidden"  id="_form" name="_form" value="signout" />
+                        <input class="btn btn-danger" type="submit" value="sign out" />
+                      </form>
+                    </div>                    
                 </div>
                 <!-- Navigation -->
                 <h3 class="mb-4"><u>Available services</u></h3>

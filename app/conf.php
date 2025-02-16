@@ -2,7 +2,7 @@
 
 const APP_TITLE = 'Application Access';
 const APP_SUBTITLE = 'For your eyes only';
-const APP_VERSION = '1.0.0-15022025-1445';
+const APP_VERSION = '1.0.1-16022025-1135';
 
 const SECRET_CODE = 'FYYO'; // Change this code
 const SESSION_DOMAIN = 'localhost'; // Change this domain
